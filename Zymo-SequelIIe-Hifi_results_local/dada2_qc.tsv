@@ -1,0 +1,7 @@
+sample-id	input	filtered	percentage of input passed filter	denoised	non-chimeric	percentage of input non-chimeric
+#q2:types	numeric	numeric	numeric	numeric	numeric	numeric
+4112_bc1008--bc1075	33316	27023	81.11	26898	26890	80.71
+4128_bc1005--bc1107	21887	16156	73.82	15004	14163	64.71
+4170_bc1005--bc1096	34400	29109	84.62	28728	28654	83.3
+4285_bc1022--bc1107	21090	18261	86.59	17923	17891	84.83
+4296_bc1022--bc1060	54492	42356	77.73	39248	36322	66.66

@@ -1,0 +1,6 @@
+sample-id	absolute-filepath
+4285_bc1022--bc1107	/opt/biotools/pb-16S-nf_dev/work/4f/059d3f6931b7827fbcc021ae629b7c/4285_bc1022--bc1107.trimmed.fastq.gz
+4128_bc1005--bc1107	/opt/biotools/pb-16S-nf_dev/work/79/858468194f43063d9931aa340238e6/4128_bc1005--bc1107.trimmed.fastq.gz
+4170_bc1005--bc1096	/opt/biotools/pb-16S-nf_dev/work/fd/358328cef4cea43a0e51f3a0cb29f6/4170_bc1005--bc1096.trimmed.fastq.gz
+4112_bc1008--bc1075	/opt/biotools/pb-16S-nf_dev/work/dc/6a39c1ea193bfdcb93e4449ad4c960/4112_bc1008--bc1075.trimmed.fastq.gz
+4296_bc1022--bc1060	/opt/biotools/pb-16S-nf_dev/work/36/54d4bc59099176ad2d079b5cd7a477/4296_bc1022--bc1060.trimmed.fastq.gz
