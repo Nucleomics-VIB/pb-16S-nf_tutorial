@@ -8,7 +8,14 @@ The code should be installed from the original github.
 
 The **[Zymo_pb-16S-nf.pdf](https://github.com/Nucleomics-VIB/pb-16S-nf_tutorial/blob/main/Zymo_pb-16S-nf.pdf)** document describes installing and running the pipeline on 5 samples produced in the lab. It rephrases most of the content of the original repo and comments on the used tools.
 
-*[[back-to-top](#top)]*  
+
+The full list of ``pb-16S-nf nextflow`` commands for that pipeline can be obtained with the comamnd:
+
+```
+nextflow run main.nf --help
+```
+
+*[[back-to-top](#top)]*  
 
 <hr>
 
