@@ -18,7 +18,7 @@ nextflow run main.nf --help
 
 ## pb-16S-nf_tutorial
 
-Pacbio 16S data analysis using the Pacbio **pb-16S-nf** nextflow pipeline and reads from 5 Zymo community standard samples replicates ([ref](https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-dna-standard))
+Pacbio 16S data analysis using the Pacbio **pb-16S-nf** nextflow pipeline and reads from 5 *ZymoBIOMICS Microbial Community DNA Standard* samples replicates ([ref](https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-dna-standard)).
 
 The **[Zymo_pb-16S-nf.pdf](https://github.com/Nucleomics-VIB/pb-16S-nf_tutorial/blob/main/Zymo_pb-16S-nf.pdf)** document describes installing and running the pipeline on 5 samples produced in the lab and using v0.4 of the pipeline (commit:763d542c5c82adb6cff769e253ebc15f61d765cb). It rephrases most of the content of the original repo and comments on the used tools.
 
