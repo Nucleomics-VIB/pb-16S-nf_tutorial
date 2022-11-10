@@ -1,5 +1,9 @@
 [(Nucleomics-VIB)](https://github.com/Nucleomics-VIB)
 
+## Disclaimer
+
+This newtflow pipeline was developped by the Pacbio team and not by me! I only provide here information on how to use it and some example results onbtained from our own Sequel-IIe data.
+
 ## Where to start?
 
 Please start by reading the full information present on the source github repo.
@@ -12,7 +16,7 @@ nextflow run main.nf --help
 
 ## pb-16S-nf_tutorial
 
-Pacbio 16S data analysis using the pacbio **[pb-16S-nf](https://github.com/PacificBiosciences/pb-16S-nf)** nextflow pipeline 
+Pacbio 16S data analysis using the Pacbio **[pb-16S-nf](https://github.com/PacificBiosciences/pb-16S-nf)** nextflow pipeline 
 
 The code should be installed from the original github.
 
