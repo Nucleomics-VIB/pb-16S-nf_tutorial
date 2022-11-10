@@ -6,7 +6,7 @@ Pacbio 16S data analysis using the pacbio **[pb-16S-nf](https://github.com/Pacif
 
 The code should be installed from the original github.
 
-The **[Zymo_pb-16S-nf.pdf](https://github.com/Nucleomics-VIB/pb-16S-nf_tutorial/blob/raw/Zymo_pb-16S-nf.pdf)** document describes installing and running the pipeline on 5 samples produced in the lab. It rephrases most of the content of the original repo and comments on the used tools.
+The **[Zymo_pb-16S-nf.pdf](https://github.com/Nucleomics-VIB/pb-16S-nf_tutorial/blob/main/Zymo_pb-16S-nf.pdf)** document describes installing and running the pipeline on 5 samples produced in the lab. It rephrases most of the content of the original repo and comments on the used tools.
 
 *[[back-to-top](#top)]*  
 
