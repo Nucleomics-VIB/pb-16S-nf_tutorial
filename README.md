@@ -1,6 +1,6 @@
 [(Nucleomics-VIB)](https://github.com/Nucleomics-VIB)
 
-# Where to start?
+## Where to start?
 
 Please start by reading the full information present on the source github repo.
 
@@ -10,7 +10,7 @@ The full list of ``pb-16S-nf nextflow`` commands for that pipeline can be obtain
 nextflow run main.nf --help
 ```
 
-# pb-16S-nf_tutorial
+## pb-16S-nf_tutorial
 
 Pacbio 16S data analysis using the pacbio **[pb-16S-nf](https://github.com/PacificBiosciences/pb-16S-nf)** nextflow pipeline 
 
