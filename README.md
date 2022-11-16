@@ -28,7 +28,11 @@ The results of running the pipeline on five of our Zymo samples are also uploade
 
 ## What next?
 
+### Interactive webtools
+
 The pipeline produces a number of Qiime2 objects that can be replayed using the **[QIIME2 Viewer and integrated Emperor webtool](https://view.qiime2.org/)** or **[iTol (for trees)](https://itol.embl.de/)**.
+
+### R integration
 
 For more advanced follow-up analyzes, the user can use the many tools present in the Qiime2 package as well as import the objects in R and create custom plots or downstream analyses there using the **[qiime2R R package](https://github.com/jbisanz/qiime2R)** (see **[tutorial on the qiime2 pages](https://forum.qiime2.org/t/tutorial-integrating-qiime2-and-r-for-data-visualization-and-analysis-using-qiime2r/4121)**)
 
