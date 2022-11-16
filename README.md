@@ -37,7 +37,11 @@ The pipeline produces a number of Qiime2 objects that can be replayed using the 
 For more advanced follow-up analyzes, the user can use the many tools present in the **[Qiime2 package](https://qiime2.org/)** and get support from the **[Qiime2 Forum](https://forum.qiime2.org/)** as well as import the objects in R and create custom plots or downstream analyses there using the **[qiime2R R package](https://github.com/jbisanz/qiime2R)** (see **[tutorial on the qiime2 pages](https://forum.qiime2.org/t/tutorial-integrating-qiime2-and-r-for-data-visualization-and-analysis-using-qiime2r/4121)**)
 
 ```
-# install the R package with the following command:
+# install the R package and dependencies with the following commands (here using Bioconductor):
+BiocManager::install(
+  c("ape","Biostrings","biomformat","phyloseq","Hmisc","yaml","tidyr","dplyr","stats","utils")
+  )
+
 if (!requireNamespace("devtools", quietly = TRUE)){install.packages("devtools")}
 devtools::install_github("jbisanz/qiime2R")
 ```
