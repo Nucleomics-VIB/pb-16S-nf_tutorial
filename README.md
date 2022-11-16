@@ -14,6 +14,70 @@ The full list of ``pb-16S-nf nextflow`` commands for that pipeline can be obtain
 
 ```
 nextflow run main.nf --help
+
+  Usage:
+  This pipeline takes in the standard sample manifest and metadata file used in
+  QIIME 2 and produces QC summary, taxonomy classification results and visualization.
+
+  For samples TSV, two columns named "sample-id" and "absolute-filepath" are
+  required. For metadata TSV file, at least two columns named "sample_name" and
+  "condition" to separate samples into different groups.
+
+  nextflow run main.nf --input samples.tsv --metadata metadata.tsv \\
+    --dada2_cpu 8 --vsearch_cpu 8
+
+  By default, sequences are first trimmed with cutadapt. If adapters are already trimmed, you can skip 
+  cutadapt by specifying "--skip_primer_trim".
+
+  Other important options:
+  --front_p    Forward primer sequence. Default to F27. (default: AGRGTTYGATYMTGGCTCAG)
+  --adapter_p    Reverse primer sequence. Default to R1492. (default: AAGTCGTAACAAGGTARCY)
+  --filterQ    Filter input reads above this Q value (default: 20).
+  --max_ee    DADA2 max_EE parameter. Reads with number of expected errors higher than
+              this value will be discarded (default: 2)
+  --minQ    DADA2 minQ parameter. Reads with any base lower than this score 
+            will be removed (default: 0)
+  --min_len    Minimum length of sequences to keep (default: 1000)
+  --max_len    Maximum length of sequences to keep (default: 1600)
+  --pooling_method    QIIME 2 pooling method for DADA2 denoise see QIIME 2 
+                      documentation for more details (default: "pseudo", alternative: "independent") 
+  --maxreject    max-reject parameter for VSEARCH taxonomy classification method in QIIME 2
+                 (default: 100)
+  --maxaccept    max-accept parameter for VSEARCH taxonomy classification method in QIIME 2
+                 (default: 100)
+  --min_asv_totalfreq    Total frequency of any ASV must be above this threshold
+                         across all samples to be retained. Set this to 0 to disable filtering
+                         (default 5)
+  --min_asv_sample    ASV must exist in at least min_asv_sample to be retained. 
+                      Set this to 0 to disable. (default 1)
+  --vsearch_identity    Minimum identity to be considered as hit (default 0.97)
+  --rarefaction_depth    Rarefaction curve "max-depth" parameter. By default the pipeline
+                         automatically select a cut-off above the minimum of the denoised 
+                         reads for >80% of the samples. This cut-off is stored in a file called
+                         "rarefaction_depth_suggested.txt" file in the results folder
+                         (default: null)
+  --dada2_cpu    Number of threads for DADA2 denoising (default: 8)
+  --vsearch_cpu    Number of threads for VSEARCH taxonomy classification (default: 8)
+  --cutadapt_cpu    Number of threads for primer removal using cutadapt (default: 16)
+  --outdir    Output directory name (default: "results")
+  --vsearch_db	Location of VSEARCH database (e.g. silva-138-99-seqs.qza can be
+                downloaded from QIIME database)
+  --vsearch_tax    Location of VSEARCH database taxonomy (e.g. silva-138-99-tax.qza can be
+                   downloaded from QIIME database)
+  --silva_db   Location of Silva 138 database for taxonomy classification 
+  --gtdb_db    Location of GTDB r202 for taxonomy classification
+  --refseq_db    Location of RefSeq+RDP database for taxonomy classification
+  --skip_primer_trim    Skip all primers trimming (switch off cutadapt and DADA2 primers
+                        removal) (default: trim with cutadapt)
+  --skip_nb    Skip Naive-Bayes classification (only uses VSEARCH) (default: false)
+  --colorby    Columns in metadata TSV file to use for coloring the MDS plot
+               in HTML report (default: condition)
+  --run_picrust2    Run PICRUSt2 pipeline. Note that pathway inference with 16S using PICRUSt2
+                    has not been tested systematically (default: false)
+  --download_db    Download databases needed for taxonomy classification only. Will not
+                   run the pipeline. Databases will be downloaded to a folder "databases"
+                   in the Nextflow pipeline directory.
+  --version    Output version
 ```
 
 ## pb-16S-nf_tutorial
@@ -22,7 +86,7 @@ Pacbio 16S data analysis using the Pacbio **pb-16S-nf** nextflow pipeline and re
 
 The **[Zymo_pb-16S-nf.pdf](https://github.com/Nucleomics-VIB/pb-16S-nf_tutorial/blob/main/Zymo_pb-16S-nf.pdf)** document describes installing and running the pipeline on 5 samples produced in the lab and using v0.4 of the pipeline (commit:763d542c5c82adb6cff769e253ebc15f61d765cb). It rephrases most of the content of the original repo and comments on the used tools.
 
-The results of running the pipeline on five of our Zymo samples are also uploaded here in **[Zymo-SequelIIe-Hifi_results_local](https://github.com/Nucleomics-VIB/pb-16S-nf_tutorial/tree/main/Zymo-SequelIIe-Hifi_results_local)** for revew and explorations using Qiime2 commands or the [Qiime2-viewer](https://view.qiime2.org/).
+The results of running the pipeline on five of our Zymo samples are also uploaded here in **[Zymo-SequelIIe-Hifi_results_local](https://github.com/Nucleomics-VIB/pb-16S-nf_tutorial/tree/main/Zymo-SequelIIe-Hifi_results_local)** for review
 
 *[[back-to-top](#top)]*  
 
@@ -30,7 +94,7 @@ The results of running the pipeline on five of our Zymo samples are also uploade
 
 ### Interactive webtools
 
-The pipeline produces a number of Qiime2 objects that can be replayed using the **[QIIME2 Viewer and integrated Emperor webtool](https://view.qiime2.org/)** or **[iTol (for trees)](https://itol.embl.de/)**.
+The pipeline produces a number of Qiime2 objects that can be converted to graphcs or tables using the **[QIIME2 Viewer and integrated Emperor webtool](https://view.qiime2.org/)** or **[iTol (for trees)](https://itol.embl.de/)**.
 
 ### R integration
 
