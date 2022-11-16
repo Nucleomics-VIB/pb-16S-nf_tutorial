@@ -45,6 +45,33 @@ if (!requireNamespace("devtools", quietly = TRUE)){install.packages("devtools")}
 devtools::install_github("jbisanz/qiime2R")
 ```
 
+The package adds the following Functions:
+
+```
+read_qza() - Function for reading artifacts (.qza).
+qza_to_phyloseq() - Imports multiple artifacts to produce a phyloseq object.
+read_q2metadata() - Reads qiime2 metadata file (containing q2-types definition line)
+write_q2manifest() - Writes a read manifest file to import data into qiime2
+theme_q2r() - A ggplot2 theme for for clean figures.
+print_provenance() - A function to display provenance information.
+is_q2metadata() - A function to check if a file is a qiime2 metadata file.
+parse_taxonomy() - A function to parse taxonomy strings and return a table where each column is a taxonomic class.
+parse_ordination() - A function to parse the internal ordination format.
+read_q2biom() - A function for reading QIIME2 biom files in format v2.1
+make_clr() - Transform feature table using centered log2 ratio.
+make_proportion() - Transform feature table to proportion (sum to 1).
+make_percent() - Transform feature to percent (sum to 100).
+interactive_table() - Create an interactive table in Rstudio viewer or rmarkdown html.
+summarize_taxa()- Create a list of tables with abundances sumed to each taxonomic level.
+taxa_barplot() - Create a stacked barplot using ggplot2.
+taxa_heatmap() - Create a heatmap of taxonomic abundances using gplot2.
+corner() - Show top corner of a large table-like obejct.
+min_nonzero() - Find the smallest non-zero, non-NA in a numeric vector.
+mean_sd() - Return mean and standard deviation for plotting.
+subsample_table() - Subsample a table with or without replacement.
+filter_features() - Remove low abundance features by number of counts and number of samples they appear in.
+```
+
 <hr>
 
 <h4>Please send comments and feedback to <a href="mailto:nucleomics.bioinformatics@vib.be">nucleomics.bioinformatics@vib.be</a></h4>
