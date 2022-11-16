@@ -45,7 +45,7 @@ if (!requireNamespace("devtools", quietly = TRUE)){install.packages("devtools")}
 devtools::install_github("jbisanz/qiime2R")
 ```
 
-The package adds the following Functions:
+The **qiime2R** package adds the following Functions:
 
 ```
 read_qza() - Function for reading artifacts (.qza).
