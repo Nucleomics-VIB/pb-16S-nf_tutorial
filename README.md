@@ -94,7 +94,7 @@ The results of running the pipeline on five of our Zymo samples are also uploade
 
 ### Interactive webtools
 
-The pipeline produces a number of Qiime2 objects that can be converted to graphcs or tables using the **[QIIME2 Viewer and integrated Emperor webtool](https://view.qiime2.org/)** or **[iTol (for trees)](https://itol.embl.de/)**.
+The pipeline produces a number of Qiime2 objects that can be converted to graphics or tables using the **[QIIME2 Viewer and integrated Emperor webtool](https://view.qiime2.org/)** or **[iTol (for trees)](https://itol.embl.de/)**.
 
 ### R integration
 
