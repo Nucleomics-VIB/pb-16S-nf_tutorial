@@ -132,7 +132,7 @@ interactive_table() - Create an interactive table in Rstudio viewer or rmarkdown
 summarize_taxa()- Create a list of tables with abundances sumed to each taxonomic level.
 taxa_barplot() - Create a stacked barplot using ggplot2.
 taxa_heatmap() - Create a heatmap of taxonomic abundances using gplot2.
-corner() - Show top corner of a large table-like obejct.
+corner() - Show top corner of a large table-like object.
 min_nonzero() - Find the smallest non-zero, non-NA in a numeric vector.
 mean_sd() - Return mean and standard deviation for plotting.
 subsample_table() - Subsample a table with or without replacement.
