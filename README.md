@@ -91,7 +91,7 @@ The results of running the pipeline on five of our Zymo samples are also uploade
 
 **Note:** the pipeline sets automatically the parameter ``--rarefaction_depth``to keep 80% of the samples and returns the obtained value in ``rarefaction_depth_suggested.txt``. When the user wants all samples retained, review of the ``alpha-rarefaction-curves.qzv``object in the **Qiime2 viewer** will allow defining a better value for that cutoff and rerun the pipeline with the addition of ``--rarefaction_depth <optimal value>`` 
 
-**Alternatively**, you can resume the first run (avoid repeating the lengthy denoising and alignment steps) at the point of rerefaction and replace later results by running the pipeline with ``-resume --rarefaction_depth <optimal value>``
+**Alternatively**, you can resume the first run (avoid repeating the lengthy denoising and alignment steps) at the point of rarefaction and replace later results by running the pipeline with ``-resume --rarefaction_depth <optimal value>``
 
 *[[back-to-top](#top)]*  
 
