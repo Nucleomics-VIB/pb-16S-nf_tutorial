@@ -88,6 +88,9 @@ The **[Zymo_pb-16S-nf.pdf](https://github.com/Nucleomics-VIB/pb-16S-nf_tutorial/
 
 The results of running the pipeline on five of our Zymo samples are also uploaded here in **[Zymo-SequelIIe-Hifi_results_local](https://github.com/Nucleomics-VIB/pb-16S-nf_tutorial/tree/main/Zymo-SequelIIe-Hifi_results_local)** for review
 
+
+**Note:** the pipeline sets automatically the parameter ``--rarefaction_depth``to keep 80% of the samples. When teh user wants all samples retained, review of the rarefaction curve wil allow defining a better value for that cutoff and rerun the pipeline with the addition of ``--rarefaction_depth <obtimal value>``
+
 *[[back-to-top](#top)]*  
 
 ## What next?
