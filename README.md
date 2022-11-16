@@ -80,7 +80,7 @@ nextflow run main.nf --help
   --version    Output version
 ```
 
-## pb-16S-nf_tutorial
+## Zymo D6305 pb-16S-nf_tutorial
 
 Pacbio 16S data analysis using the Pacbio **pb-16S-nf** nextflow pipeline and reads from 5 *ZymoBIOMICS Microbial Community DNA Standard* samples replicates ([ref](https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-microbial-community-dna-standard)).
 
