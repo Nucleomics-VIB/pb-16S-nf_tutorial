@@ -38,15 +38,10 @@ For more advanced follow-up analyzes, the user can use the many tools present in
 
 ```
 # install the R package and dependencies with the following commands (here using Bioconductor):
-if (!require("BiocManager", quietly = TRUE)){install.packages("BiocManager");
-BiocManager::install(version = "3.16")}
-
-BiocManager::install(
-  c("ape","Biostrings","biomformat","phyloseq","Hmisc","yaml","tidyr","dplyr","stats","utils")
-  )
+if (!require("BiocManager", quietly = TRUE)){install.packages("BiocManager"); BiocManager::install(version = "3.16")}
+BiocManager::install(c("ape","Biostrings","biomformat","phyloseq","Hmisc","yaml","tidyr","dplyr","stats","utils"))
 
 if (!requireNamespace("devtools", quietly = TRUE)){install.packages("devtools")}
-
 devtools::install_github("jbisanz/qiime2R")
 ```
 
